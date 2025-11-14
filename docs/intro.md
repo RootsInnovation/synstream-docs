@@ -19,8 +19,9 @@ Explore the sections on the left to learn how to plan, build, and operate flows 
 
 - **Getting Started** — essential concepts, environment setup, and first deployment.
 - **Guides** — practical tutorials and playbooks for end-to-end use cases.
-- **Concepts** — deep dives into architecture, data models, and governance.
+- **Examples** — real-world examples and templates for common use cases.
 - **Troubleshooting** — resolution checklists and diagnostic runbooks.
-- **Release Notes** — product improvements, roadmap highlights, and deprecation notices.
+
+For technical deep dives into architecture, data models, governance, and release notes, see the [Developers](/developers/intro) section.
 
 Ready to begin? Start with Getting Started to configure your workspace, or jump straight into the Guides if you already have a target workflow in mind.

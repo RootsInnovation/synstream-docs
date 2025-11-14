@@ -18,7 +18,7 @@ const homepageContent = {
     },
     secondaryAction: {
       label: 'Release Notes',
-      to: '/docs/release-notes/changelog',
+      to: '/developers/release-notes/changelog',
     },
     card: {
       description: 'Structured knowledge, best practices, and deployment checklists to help you ship faster.',

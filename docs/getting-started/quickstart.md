@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Quickstart: Install Synstream on Your Cluster
+# Quickstart
 
 Get Synstream up and running on Kubernetes in minutes.
 
@@ -26,6 +26,12 @@ helm install synstream-operator roots-innovation/synstream-operator \
 # Install Synstream Manager
 helm install synstream-manager roots-innovation/synstream-manager \
   --namespace synstream-operator
+
+# Install Synstream Console
+helm install synstream-console roots-innovation/synstream-console \
+  --namespace synstream \
+  --create-namespace \
+  --set 'global.imagePullSecrets[0].name=ghcr-imagepullsecret'
 ```
 
 Review the full list of configuration values in the [Helm chart reference](https://rootsinnovation.github.io/helm-charts/).

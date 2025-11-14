@@ -21,32 +21,113 @@ const sidebars = {
       type: 'category',
       label: 'Getting Started',
       items: [
-        'getting-started/overview',
-        'getting-started/quickstart',
+        {
+          type: 'doc',
+          id: 'getting-started/overview',
+          label: '📋 Overview',
+        },
+        {
+          type: 'doc',
+          id: 'getting-started/quickstart',
+          label: '⚡ Quickstart',
+        },
       ],
     },
     {
       type: 'category',
       label: 'Guides',
       items: [
-        'guides/overview',
-        'guides/automation',
+        {
+          type: 'doc',
+          id: 'guides/overview',
+          label: '📋 Overview',
+        },
+        {
+          type: 'doc',
+          id: 'guides/register-login',
+          label: '🔐 Register and Login',
+        },
+        {
+          type: 'doc',
+          id: 'guides/users-products',
+          label: '👥 Users and Products',
+        },
+        {
+          type: 'doc',
+          id: 'guides/create-product',
+          label: '➕ Create Product',
+        },
+        {
+          type: 'doc',
+          id: 'guides/enter-product',
+          label: '🚪 Enter Product',
+        },
       ],
     },
     {
       type: 'category',
-      label: 'Concepts',
-      items: ['concepts/architecture'],
+      label: 'Examples',
+      collapsed: false,
+      items: [
+        {
+          type: 'doc',
+          id: 'examples/overview',
+          label: '📋 Overview',
+        },
+        {
+          type: 'category',
+          label: '🛒 E-Commerce Store',
+          collapsed: true,
+          items: [
+            {
+              type: 'doc',
+              id: 'examples/ecommerce-store-daily/overview',
+              label: '📋 Overview',
+            },
+            {
+              type: 'doc',
+              id: 'examples/ecommerce-store-daily/data-extraction',
+              label: '📥 Data Extraction',
+            },
+            {
+              type: 'doc',
+              id: 'examples/ecommerce-store-daily/data-transformation',
+              label: '🔄 Data Transformation',
+            },
+            {
+              type: 'doc',
+              id: 'examples/ecommerce-store-daily/data-loading',
+              label: '📤 Data Loading',
+            },
+          ],
+        },
+      ],
     },
     {
       type: 'category',
       label: 'Troubleshooting',
-      items: ['troubleshooting/common-issues'],
-    },
-    {
-      type: 'category',
-      label: 'Release Notes',
-      items: ['release-notes/changelog'],
+      items: [
+        {
+          type: 'doc',
+          id: 'troubleshooting/common-issues',
+          label: '🔧 Common Issues',
+        },
+        {
+          type: 'doc',
+          id: 'troubleshooting/faq',
+          label: '❓ FAQ',
+        },
+        {
+          type: 'doc',
+          id: 'troubleshooting/advantages',
+          label: '⭐ Advantages',
+        },
+        {
+          type: 'doc',
+          id: 'troubleshooting/contact',
+          label: '📞 Contact',
+        },
+      ],
     },
   ],
 };

@@ -47,6 +47,8 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
+          sidebarCollapsible: true,
+          sidebarCollapsed: false,
         },
         blog: {
           showReadingTime: true,
@@ -62,6 +64,20 @@ const config = {
           customCss: './src/css/custom.css',
         },
       }),
+    ],
+  ],
+
+  plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'developers',
+        path: 'docs-developers',
+        routeBasePath: 'developers',
+        sidebarPath: './sidebars-developers.js',
+        sidebarCollapsible: true,
+        sidebarCollapsed: false,
+      },
     ],
   ],
 
@@ -81,23 +97,23 @@ const config = {
         },
         items: [
           {
-            to: '/docs/getting-started/overview',
-            label: 'Getting Started',
+            to: '/docs/intro',
+            label: 'User Guide',
             position: 'left',
           },
           {
-            to: '/docs/guides/overview',
-            label: 'Guides',
+            to: '/docs/examples/overview',
+            label: 'Examples',
             position: 'left',
           },
           {
-            to: '/docs/concepts/architecture',
-            label: 'Concepts',
+            to: '/developers/intro',
+            label: 'Developers',
             position: 'left',
           },
           {
-            to: '/docs/release-notes/changelog',
-            label: 'Release Notes',
+            to: '/pricing',
+            label: 'Pricing',
             position: 'left',
           },
           {
@@ -132,7 +148,7 @@ const config = {
             items: [
               {
                 label: 'Release Notes',
-                to: '/docs/release-notes/changelog',
+                to: '/developers/release-notes/changelog',
               },
             ],
           },

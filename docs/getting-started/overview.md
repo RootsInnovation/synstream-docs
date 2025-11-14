@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Getting Started Overview
+# Overview
 
 Welcome to Synstream! This guide walks you through the essential steps required before launching your first experience.
 
