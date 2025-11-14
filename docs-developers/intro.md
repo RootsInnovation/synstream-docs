@@ -4,27 +4,29 @@ sidebar_position: 1
 
 # Developer Documentation
 
-Welcome to the Synstream Developer Documentation. This section is designed for developers who want to extend, customize, or integrate with Synstream.
+Welcome to the Synstream Developer Documentation. This section is designed for developers who want to understand the technical details, features, and implementation guides for Synstream.
 
 ## What's Here
 
-- **API Reference** — complete API documentation for all endpoints
-- **SDK Guides** — how to use Synstream SDKs in your applications
-- **Architecture Deep Dives** — detailed technical architecture documentation
-- **Integration Patterns** — advanced integration examples and patterns
-- **Contributing** — how to contribute to Synstream development
+- **Nodes** — learn how to use each node in the workflow designer
+- **AI Features** — understand AI capabilities and how to use them
+- **Sidebar Features** — explore sidebar functionality and features
+- **Header Features** — discover header additional features
+- **Learning** — detailed tutorials for Examples use cases
+- **Architecture** — detailed technical architecture documentation
+- **Release Notes** — latest updates and changes
 
 ## Getting Started
 
 If you're new to Synstream development:
 
 1. Review the [Architecture Overview](./architecture/overview) to understand the system design
-2. Check out the [API Reference](./api/overview) for available endpoints
-3. Explore [Integration Examples](./integrations/overview) for common use cases
+2. Check out the [Nodes](./nodes/overview) to learn how to use workflow nodes
+3. Explore [AI Features](./ai/overview) to understand AI capabilities
+4. Follow [Learning](./learning/overview) tutorials for detailed examples
 
 ## Resources
 
 - [GitHub Repository](https://github.com/RootsInnovation/synstream-docs)
 - [Issue Tracker](https://github.com/RootsInnovation/synstream-docs/issues)
 - [Support](mailto:contact.us@rtsinv.com)
-

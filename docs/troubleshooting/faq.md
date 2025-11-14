@@ -61,7 +61,7 @@ See the [Guides](/docs/guides/overview) for detailed instructions.
 
 ### How do I integrate with external systems?
 
-Synstream provides a connector ecosystem that supports integration with dozens of SaaS and on-premises systems. See the [Integrations](/developers/integrations/overview) section for details.
+Synstream provides a connector ecosystem that supports integration with dozens of SaaS and on-premises systems. See the [Nodes](/developers/nodes/overview) section to learn about available nodes and connectors.
 
 ### How do I handle errors in my pipeline?
 

@@ -9,22 +9,26 @@ Welcome to the Synstream Examples collection. This section provides real-world e
 ## What You'll Find
 
 Each example includes:
-- **Step-by-step instructions** — detailed walkthroughs for building the pipeline
-- **Configuration details** — complete setup and configuration examples
-- **Best practices** — recommended patterns and approaches
-- **Troubleshooting tips** — common issues and solutions
+- **Background Story** — understand the challenges and pain points
+- **Solution Overview** — see how Synstream solves these challenges
+- **Visual Demonstrations** — screenshots and results (coming soon)
+- **Links to Developer Docs** — detailed implementation guides in the Developer section
 
 ## Example Categories
 
 ### E-Commerce Store Daily Data Processing
-Learn how to process daily data from e-commerce platforms and physical stores, including data extraction, transformation, and consolidation.
+Learn how Synstream automates daily data processing from e-commerce platforms and physical stores, eliminating manual processes and providing real-time visibility.
+
+### Metadata Uniform
+Learn how Synstream creates a unified metadata repository from multiple sources, enabling better data discovery, governance, and compliance.
 
 ## Getting Started
 
 1. Browse the examples in the sidebar
 2. Select an example that matches your use case
-3. Follow the step-by-step instructions
-4. Customize the example to fit your needs
+3. Read the overview to understand the challenges
+4. Review the solution to see how Synstream addresses them
+5. Check the Developer Documentation for detailed implementation guides
 
 ## Contributing
 

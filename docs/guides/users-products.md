@@ -22,7 +22,7 @@ The User Management section allows you to manage system users and permissions. *
 The User Management page displays:
 - **Account** — user account name
 - **Name** — user display name
-- **Role** — user role (Owner, Admin, Developer, Viewer)
+- **Role** — user role (Owner, Member, Viewer, Dashboard-only)
 - **Type** — user type (Local, External)
 - **Created At** — account creation date and time
 - **Actions** — view details or delete user
@@ -36,7 +36,7 @@ The User Management page displays:
    - **Account**: Enter the account name
    - **Name**: Enter the display name
    - **Password**: Set a password for the user
-   - **Role**: Select the user role (Owner, Admin, Developer, Viewer)
+   - **Role**: Select the user role (Owner, Member, Viewer, Dashboard-only)
    - **Type**: Select the user type (Local, External)
 3. Click **Create** to add the user
 
@@ -67,10 +67,10 @@ The User Management page displays:
 
 Synstream supports the following roles:
 
-- **Owner** — full access to all features, settings, and management functions
-- **Admin** — full access to all features, settings, and billing (except user management)
-- **Developer** — can create and modify pipelines, view logs and metrics
+- **Owner** — full access to all features, settings, and management functions (user management, product creation/modification/deletion)
+- **Member** — can create and modify pipelines, view logs and metrics, access dashboard features
 - **Viewer** — read-only access to pipelines and dashboards
+- **Dashboard-only** — access limited to dashboard views only, cannot view or modify pipelines
 
 ## Plan Management
 

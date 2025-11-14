@@ -86,18 +86,25 @@ const sidebars = {
             },
             {
               type: 'doc',
-              id: 'examples/ecommerce-store-daily/data-extraction',
-              label: '📥 Data Extraction',
+              id: 'examples/ecommerce-store-daily/solution',
+              label: '✅ Solution',
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: '📊 Metadata Uniform',
+          collapsed: true,
+          items: [
+            {
+              type: 'doc',
+              id: 'examples/metadata-uniform/overview',
+              label: '📋 Overview',
             },
             {
               type: 'doc',
-              id: 'examples/ecommerce-store-daily/data-transformation',
-              label: '🔄 Data Transformation',
-            },
-            {
-              type: 'doc',
-              id: 'examples/ecommerce-store-daily/data-loading',
-              label: '📤 Data Loading',
+              id: 'examples/metadata-uniform/solution',
+              label: '✅ Solution',
             },
           ],
         },
