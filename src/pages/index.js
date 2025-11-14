@@ -20,7 +20,10 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
+            Explore the Docs
+          </Link>
+          <Link className="button button--outline button--lg" to="/blog">
+            Latest Updates
           </Link>
         </div>
       </div>
@@ -32,8 +35,8 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title={`${siteConfig.title} Home`}
+      description="Synstream Docs centralizes product guides, tutorials, and API references.">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
