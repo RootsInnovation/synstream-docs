@@ -2,43 +2,37 @@
 sidebar_position: 2
 ---
 
-# Quickstart: Launch Your First Flow
+# Quickstart: Install Synstream on Your Cluster
 
-Follow these steps to publish a basic Synstream flow in under 10 minutes.
+Get Synstream up and running on Kubernetes in minutes.
 
-## 1. Install the CLI
-
-```bash
-npm install -g @synstream/cli
-```
-
-Log in with your Synstream credentials:
+## Step 1: Add the Helm Repository
 
 ```bash
-synstream login
+helm repo add roots-innovation https://rootsinnovation.github.io/helm-charts
+helm repo update
 ```
 
-## 2. Scaffold a Project
+## Step 2: Install Synstream Components
+
+Install both the Synstream Operator and Manager into your cluster:
 
 ```bash
-synstream init my-flow
-cd my-flow
-npm install
+# Install Synstream Operator
+helm install synstream-operator roots-innovation/synstream-operator \
+  --namespace synstream-operator \
+  --create-namespace
+
+# Install Synstream Manager
+helm install synstream-manager roots-innovation/synstream-manager \
+  --namespace synstream-operator
 ```
 
-The template includes a sample flow, environment configuration, and deploy script.
+Review the full list of configuration values in the [Helm chart reference](https://rootsinnovation.github.io/helm-charts/).
 
-## 3. Configure Secrets
+Next steps:
 
-Update `.synstream/config.json` with the API keys for your connected services. Use `synstream secrets set` to store sensitive values securely.
-
-## 4. Deploy
-
-```bash
-npm run deploy
-```
-
-The CLI uploads the flow, runs validation, and publishes it to your selected environment. Verify the deployment in the Synstream dashboard.
-
-Next steps: explore the Guides section for deeper scenarios and customization patterns.
+- Configure ingress and TLS for your environment.
+- Connect the Synstream Manager to your identity provider.
+- Follow the Guides section to publish your first automated flow.
 

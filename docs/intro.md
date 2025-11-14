@@ -4,14 +4,23 @@ sidebar_position: 1
 
 # Welcome to Synstream Docs
 
-Synstream Docs is the central hub for everything you need to design, build, and operate experiences on the Synstream platform. You will find quick-starts, detailed feature guides, and best practices that help teams ship with confidence.
+Synstream is an enterprise-grade workflow automation platform built for teams that demand reliability, auditability, and speed. Use Synstream to orchestrate customer journeys, back-office operations, and AI-driven experiences with the same toolset.
 
-Use the navigation on the left to jump into the section that fits your journey:
+![Synstream workflow designer](./assets/workflow-designer.png)
 
-- **Getting Started** — learn the basics, set up your environment, and launch your first Synstream project.
-- **Guides** — follow end-to-end tutorials for common use cases and workflows.
-- **Concepts** — dive into the architecture, data model, and core building blocks that power Synstream.
-- **Troubleshooting** — diagnose issues quickly with curated tips and checklists.
-- **Release Notes** — stay up to date with the latest product improvements and deprecations.
+What sets Synstream apart:
 
-If you’re new here, keep reading for the essential first steps. Already familiar with the platform? Skip ahead to the guides or concepts that matter to your role.
+- **Resilient execution** — advanced retry policies, circuit breakers, and observability keep flows healthy even when downstream systems misbehave.
+- **Versioned flow design** — native Git history for every flow lets you branch, review, and roll back with the same rigor as your application code.
+- **Connector ecosystem** — integrate dozens of SaaS and on-premises systems out of the box, or bring your own connector framework.
+- **AI-first tooling** — built-in assistants can draft flow logic, generate code snippets, and update documentation whether you deploy in the cloud or on-prem.
+
+Explore the sections on the left to learn how to plan, build, and operate flows with Synstream:
+
+- **Getting Started** — essential concepts, environment setup, and first deployment.
+- **Guides** — practical tutorials and playbooks for end-to-end use cases.
+- **Concepts** — deep dives into architecture, data models, and governance.
+- **Troubleshooting** — resolution checklists and diagnostic runbooks.
+- **Release Notes** — product improvements, roadmap highlights, and deprecation notices.
+
+Ready to begin? Start with Getting Started to configure your workspace, or jump straight into the Guides if you already have a target workflow in mind.
