@@ -213,7 +213,8 @@ This tutorial demonstrates how to build a workflow that:
 
 ## Next Steps
 
-- [E-Commerce Store Daily Data Processing](./ecommerce-store-daily) — learn about e-commerce pipeline
-- [Examples Overview](https://rootsinnovation.github.io/synstream-docs/docs/examples/overview) — review examples
-- [Nodes Overview](../nodes/overview) — learn about nodes
+- [Solution](./solution) — detailed implementation guide
+- [E-Commerce Store Daily Data Processing](../ecommerce-store-daily/overview) — learn about e-commerce pipeline
+- [Examples Overview](/docs/examples/overview) — review examples
+- [Nodes Overview](../../nodes/overview) — learn about nodes
 

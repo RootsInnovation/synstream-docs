@@ -42,7 +42,7 @@ Learn how to build a daily data processing pipeline that:
 - Consolidates data from multiple sources
 - Generates daily reports
 
-[View Tutorial](./ecommerce-store-daily)
+[View Tutorial](./ecommerce-store-daily/overview)
 
 ### Metadata Uniform
 
@@ -53,11 +53,11 @@ Learn how to create a metadata uniform pipeline that:
 - Transforms metadata to uniform format
 - Stores metadata in centralized repository
 
-[View Tutorial](./metadata-uniform)
+[View Tutorial](./metadata-uniform/overview)
 
 ## Next Steps
 
-- [E-Commerce Store Daily Data Processing](./ecommerce-store-daily) — detailed tutorial
-- [Metadata Uniform](./metadata-uniform) — detailed tutorial
+- [E-Commerce Store Daily Data Processing](./ecommerce-store-daily/overview) — detailed tutorial
+- [Metadata Uniform](./metadata-uniform/overview) — detailed tutorial
 - [Examples Overview](https://rootsinnovation.github.io/synstream-docs/docs/examples/overview) — review examples
 
