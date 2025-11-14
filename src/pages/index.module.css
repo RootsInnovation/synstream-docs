@@ -3,21 +3,304 @@
  * and scoped locally.
  */
 
+:root {
+  --syn-hero-bg: linear-gradient(120deg, rgba(13, 148, 136, 0.12), rgba(14, 165, 233, 0.1)),
+    var(--ifm-hero-background-color);
+  --syn-hero-foreground: var(--ifm-color-emphasis-900);
+  --syn-hero-muted: rgba(30, 41, 59, 0.75);
+  --syn-card-surface: rgba(255, 255, 255, 0.72);
+  --syn-card-border: rgba(148, 210, 189, 0.45);
+  --syn-card-text: rgba(30, 41, 59, 0.8);
+  --syn-metric-surface: rgba(255, 255, 255, 0.7);
+  --syn-metric-border: rgba(14, 165, 233, 0.35);
+  --syn-metric-text: rgba(30, 41, 59, 0.8);
+  --syn-cta-surface: linear-gradient(135deg, rgba(14, 165, 233, 0.12), rgba(13, 148, 136, 0.12));
+  --syn-cta-border: rgba(14, 165, 233, 0.35);
+  --syn-cta-text: var(--ifm-color-emphasis-800);
+  --syn-hero-badge-bg: rgba(13, 148, 136, 0.16);
+  --syn-hero-badge-border: rgba(13, 148, 136, 0.45);
+}
+
+html[data-theme='dark'] {
+  --syn-hero-bg: linear-gradient(135deg, rgba(13, 148, 136, 0.12), rgba(14, 165, 233, 0.12)),
+    var(--ifm-navbar-background-color);
+  --syn-hero-foreground: rgba(241, 245, 249, 0.96);
+  --syn-hero-muted: rgba(226, 232, 240, 0.75);
+  --syn-card-surface: rgba(15, 23, 42, 0.7);
+  --syn-card-border: rgba(148, 210, 189, 0.4);
+  --syn-card-text: rgba(226, 232, 240, 0.92);
+  --syn-metric-surface: rgba(15, 23, 42, 0.75);
+  --syn-metric-border: rgba(56, 189, 248, 0.45);
+  --syn-metric-text: rgba(226, 232, 240, 0.88);
+  --syn-cta-surface: linear-gradient(135deg, rgba(14, 165, 233, 0.16), rgba(13, 148, 136, 0.16));
+  --syn-cta-border: rgba(56, 189, 248, 0.45);
+  --syn-cta-text: rgba(226, 232, 240, 0.95);
+  --syn-hero-badge-bg: rgba(148, 210, 189, 0.18);
+  --syn-hero-badge-border: rgba(148, 210, 189, 0.45);
+}
+
 .heroBanner {
-  padding: 4rem 0;
-  text-align: center;
   position: relative;
+  padding: 6rem 0;
+  background: var(--syn-hero-bg);
+  color: var(--syn-hero-foreground);
   overflow: hidden;
+}
+
+.heroGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 4rem;
+  position: relative;
+  z-index: 1;
+  align-items: center;
+}
+
+.heroContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.heroBadge {
+  align-self: flex-start;
+  background: var(--syn-hero-badge-bg);
+  border: 1px solid var(--syn-hero-badge-border);
+  border-radius: 999px;
+  color: rgba(13, 148, 136, 0.95);
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  padding: 0.35rem 1rem;
+  text-transform: uppercase;
+}
+
+.heroTitle {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.heroSubtitle {
+  font-size: 1.25rem;
+  margin: 0;
+  color: var(--syn-hero-muted);
+}
+
+.heroBullets {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.heroBullet {
+  position: relative;
+  padding-left: 1.75rem;
+  font-size: 1rem;
+  color: var(--syn-hero-foreground);
+}
+
+.heroBullet::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.4rem;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 0.5rem;
+  background: linear-gradient(135deg, #38bdf8, #60a5fa);
+  box-shadow: 0 0 0 4px rgba(96, 165, 250, 0.25);
+}
+
+.heroActions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.secondaryButton {
+  background: transparent;
+  border-color: rgba(148, 163, 184, 0.55);
+  color: var(--syn-hero-foreground);
+}
+
+.secondaryButton:hover {
+  border-color: var(--syn-hero-foreground);
+  color: var(--syn-hero-foreground);
+}
+
+.heroIllustration {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.heroCard {
+  background: var(--syn-card-surface);
+  backdrop-filter: blur(24px);
+  border: 1px solid var(--syn-card-border);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  width: min(420px, 100%);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  box-shadow: 0 25px 60px rgba(15, 23, 42, 0.2);
+}
+
+.heroLogo {
+  width: 72px;
+  height: 72px;
+}
+
+.heroCard p {
+  margin: 0;
+  color: var(--syn-card-text);
+  line-height: 1.5;
+}
+
+.heroStatGroup {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.heroStatLabel {
+  display: block;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: rgba(13, 148, 136, 0.9);
+}
+
+.heroStatValue {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--syn-hero-foreground);
+}
+
+.metricsSection {
+  padding: 3.5rem 0;
+  background: var(--ifm-background-surface-color);
+}
+
+.metricsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.metricCard {
+  background: var(--syn-metric-surface);
+  border-radius: 1rem;
+  padding: 1.75rem;
+  border: 1px solid var(--syn-metric-border);
+  color: var(--syn-metric-text);
+  text-align: center;
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.18);
+}
+
+.metricValue {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #38bdf8;
+}
+
+.metricLabel {
+  display: block;
+  margin-top: 0.25rem;
+  font-weight: 500;
+  color: var(--syn-hero-foreground);
+}
+
+.metricCaption {
+  margin: 0.75rem 0 0;
+  font-size: 0.95rem;
+  color: rgba(100, 116, 139, 0.82);
+}
+
+.ctaSection {
+  padding: 5rem 0;
+}
+
+.ctaCard {
+  background: var(--syn-cta-surface);
+  border-radius: 1.5rem;
+  padding: 3rem;
+  border: 1px solid var(--syn-cta-border);
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ctaTitle {
+  margin-bottom: 1rem;
+}
+
+.ctaSubtitle {
+  margin: 0;
+  font-size: 1.1rem;
+  color: var(--syn-cta-text);
+}
+
+.ctaActions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
 @media screen and (max-width: 996px) {
   .heroBanner {
-    padding: 2rem;
+    padding: 4rem 0;
+  }
+
+  .heroGrid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .heroIllustration {
+    justify-content: center;
+  }
+
+  .metricsGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .ctaCard {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 
-.buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+@media screen and (max-width: 640px) {
+  .heroTitle {
+    font-size: 2.4rem;
+  }
+
+  .metricsGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+html[data-theme='dark'] .secondaryButton {
+  border-color: rgba(226, 232, 240, 0.5);
+  color: var(--syn-hero-foreground);
+}
+
+html[data-theme='dark'] .secondaryButton:hover {
+  border-color: rgba(226, 232, 240, 0.85);
+  color: var(--syn-hero-foreground);
+}
+
+html[data-theme='dark'] .metricCaption {
+  color: rgba(148, 163, 184, 0.7);
+}
+
+html[data-theme='dark'] .heroStatLabel {
+  color: rgba(148, 210, 189, 0.8);
 }

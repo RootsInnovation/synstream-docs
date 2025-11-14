@@ -74,19 +74,32 @@ const config = {
         respectPrefersColorScheme: true,
       },
       navbar: {
-        title: 'My Site',
+        title: 'Synstream Docs',
         logo: {
           alt: 'Synstream Docs',
           src: 'img/icon.png',
         },
         items: [
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            to: '/docs/getting-started/overview',
+            label: 'Getting Started',
             position: 'left',
-            label: 'Tutorial',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {
+            to: '/docs/guides/overview',
+            label: 'Guides',
+            position: 'left',
+          },
+          {
+            to: '/docs/concepts/architecture',
+            label: 'Concepts',
+            position: 'left',
+          },
+          {
+            to: '/docs/release-notes/changelog',
+            label: 'Release Notes',
+            position: 'left',
+          },
           {
             href: 'https://github.com/RootsInnovation/synstream-docs',
             label: 'GitHub',
@@ -98,46 +111,46 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Documentation',
             items: [
               {
-                label: 'Tutorial',
+                label: 'Overview',
                 to: '/docs/intro',
               },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'Getting Started',
+                to: '/docs/getting-started/overview',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'X',
-                href: 'https://x.com/docusaurus',
+                label: 'Troubleshooting',
+                to: '/docs/troubleshooting/common-issues',
               },
             ],
           },
           {
-            title: 'More',
+            title: 'Resources',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
+                label: 'Release Notes',
+                to: '/docs/release-notes/changelog',
               },
+            ],
+          },
+          {
+            title: 'Company',
+            items: [
               {
                 label: 'GitHub',
                 href: 'https://github.com/RootsInnovation/synstream-docs',
               },
+              {
+                label: 'Support',
+                href: 'mailto:contact.us@rtsinv.com',
+              },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Synstream.`,
       },
       prism: {
         theme: prismThemes.github,

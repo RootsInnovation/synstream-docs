@@ -5,57 +5,49 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     title: 'Quick Starts',
+    caption: 'Launch in hours, not weeks',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
-    description: (
-      <>
-        Launch Synstream projects fast with guided tutorials and ready-to-run
-        templates tailored to common workflows.
-      </>
-    ),
+    description:
+      'Follow curated onboarding flows and templates tailored to your team’s goals.',
   },
   {
-    title: 'Integration Playbooks',
+    title: 'Operational Best Practices',
+    caption: 'Built-in guardrails',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
-    description: (
-      <>
-        Learn how to connect Synstream to your stack with step-by-step guides,
-        reference architectures, and best practices.
-      </>
-    ),
+    description:
+      'Implement approvals, alerts, and rollbacks to keep production deployments safe.',
   },
   {
-    title: 'API Reference',
+    title: 'End-to-end Visibility',
+    caption: 'Know what is happening',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
-    description: (
-      <>
-        Explore comprehensive REST and webhook documentation, complete with code
-        samples and schema definitions.
-      </>
-    ),
+    description:
+      'Track flow executions, debug faster, and surface insights with real-time telemetry.',
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({Svg, title, caption, description}) {
   return (
-    <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+    <div className={styles.card}>
+      <div className={styles.iconWrapper}>
+        <Svg role="img" />
       </div>
-      <div className="text--center padding-horiz--md">
-        <Heading as="h3">{title}</Heading>
-        <p>{description}</p>
-      </div>
+      <Heading as="h3" className={styles.cardTitle}>
+        {title}
+      </Heading>
+      <span className={styles.cardCaption}>{caption}</span>
+      <p className={styles.cardBody}>{description}</p>
     </div>
   );
 }
 
-export default function HomepageFeatures() {
+export default function HomepageFeatures({features = FeatureList}) {
   return (
     <section className={styles.features}>
       <div className="container">
-        <div className="row">
-          {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
+        <div className={styles.grid}>
+          {features.map((feature) => (
+            <Feature key={feature.title} {...feature} />
           ))}
         </div>
       </div>

@@ -1,41 +1,45 @@
-# Website
+# Synstream Docs
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+Synstream Docs is built with [Docusaurus](https://docusaurus.io/) and contains product guides, concepts, troubleshooting tips, and release notes for the Synstream platform.
+
+- **Live site:** https://rootsinnovation.github.io/synstream-docs/
+- **Repository:** https://github.com/RootsInnovation/synstream-docs
+
+## Prerequisites
+
+- Node.js 20+
+- npm 9+
 
 ## Installation
 
 ```bash
-yarn
+npm ci
 ```
 
 ## Local Development
 
 ```bash
-yarn start
+npm run start
 ```
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+Starts the development server on http://localhost:3000/ with hot reload.
 
 ## Build
 
 ```bash
-yarn build
+npm run build
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+Generates the production-ready static assets under `build/`.
 
 ## Deployment
 
-Using SSH:
+Deployments are handled via GitHub Actions using the official Pages workflow. Push to `main` (or run the `Deploy` workflow manually) and the site is published automatically to GitHub Pages.
+
+To inspect a deployment locally:
 
 ```bash
-USE_SSH=true yarn deploy
+npm run serve
 ```
 
-Not using SSH:
-
-```bash
-GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+This serves the `build/` output on http://localhost:3000/. Hit `Ctrl+C` to stop the server.
