@@ -102,7 +102,6 @@ AI provides:
 
 ## Next Steps
 
-- [Flow Design Assistant](./flow-design-assistant) — learn about flow design AI features
-- [Code Generation](./code-generation) — understand code generation capabilities
-- [Documentation Generation](./documentation-generation) — explore documentation generation
+- [Flow Assistant](./flow-design-assistant) — learn about flow design AI features
+- [AI Assistant](./ai-assistant) — understand code generation, documentation, and error resolution capabilities
 

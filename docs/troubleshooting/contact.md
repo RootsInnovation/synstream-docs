@@ -17,18 +17,6 @@ For technical support, questions, or issues, please contact us at:
 - **Business Days:** Monday - Friday, 9:00 AM - 6:00 PM (UTC+8)
 - **Emergency Support:** Available for Enterprise customers
 
-## Sales and Partnerships
-
-### Sales Inquiries
-For sales inquiries, pricing information, or enterprise plans, please contact:
-- **Email:** [contact.us@rtsinv.com](mailto:contact.us@rtsinv.com)
-- **Subject:** Sales Inquiry
-
-### Partnership Opportunities
-Interested in partnering with Synstream? Contact us at:
-- **Email:** [contact.us@rtsinv.com](mailto:contact.us@rtsinv.com)
-- **Subject:** Partnership Inquiry
-
 ## Community and Resources
 
 ### GitHub
@@ -62,26 +50,3 @@ Include as much information as possible:
 - Actual behavior
 - Environment details
 - Logs or error messages
-
-## Office Information
-
-### Company
-**Roots Innovation**
-
-### Contact Information
-- **Email:** [contact.us@rtsinv.com](mailto:contact.us@rtsinv.com)
-- **Website:** [https://rootsinnovation.github.io/synstream-docs/](https://rootsinnovation.github.io/synstream-docs/)
-
-## Getting Help
-
-### Documentation
-- Check the [Documentation](/docs/intro) for comprehensive guides
-- Browse [Examples](/docs/examples/overview) for real-world use cases
-- Review [Troubleshooting](/docs/troubleshooting/common-issues) for common issues
-- Read [FAQ](/docs/troubleshooting/faq) for frequently asked questions
-
-### Community
-- Join our GitHub community
-- Participate in discussions
-- Share your experiences and best practices
-

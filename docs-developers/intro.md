@@ -20,7 +20,7 @@ Welcome to the Synstream Developer Documentation. This section is designed for d
 
 If you're new to Synstream development:
 
-1. Review the [Architecture Overview](./architecture/overview) to understand the system design
+1. Review the [Architecture](./concepts/architecture) to understand the system design
 2. Check out the [Nodes](./nodes/overview) to learn how to use workflow nodes
 3. Explore [AI Features](./ai/overview) to understand AI capabilities
 4. Follow [Learning](./learning/overview) tutorials for detailed examples

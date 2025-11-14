@@ -100,7 +100,6 @@ You can customize:
 
 ## Next Steps
 
-- [Code Generation](./code-generation) — learn about code generation features
-- [Documentation Generation](./documentation-generation) — understand documentation generation
-- [Error Resolution](./error-resolution) — explore error resolution features
+- [Overview](./overview) — learn about all AI features
+- [AI Assistant](./ai-assistant) — understand code generation, documentation, and error resolution
 

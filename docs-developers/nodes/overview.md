@@ -88,8 +88,7 @@ Advanced nodes for complex operations:
 
 ## Next Steps
 
-- [Common Nodes](./common-nodes) — learn about common nodes
-- [Extract and Load Nodes](./extract-load-nodes) — understand data extraction and loading
-- [Transform Nodes](./transform-nodes) — learn about data transformation
-- [Advanced Nodes](./advanced-nodes) — explore advanced node features
+- [Common Nodes](./common/start-node) — learn about common nodes
+- [Extract and Load Nodes](./extract-load/xlsx-node) — understand data extraction and loading
+- [Transform Nodes](./transform/function-node) — learn about data transformation
 

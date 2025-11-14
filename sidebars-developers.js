@@ -33,42 +33,74 @@ export default {
       type: 'category',
       label: 'Nodes',
       items: [
-        'nodes/overview',
-        'nodes/common-nodes',
-        'nodes/extract-load-nodes',
-        'nodes/transform-nodes',
-        'nodes/advanced-nodes',
+        {
+          type: 'doc',
+          id: 'nodes/overview',
+          label: '📋 Overview',
+        },
+        {
+          type: 'category',
+          label: '⚙️ Common',
+          collapsed: true,
+          items: [
+            'nodes/common/start-node',
+          ],
+        },
+        {
+          type: 'category',
+          label: '📊 Extract and Load',
+          collapsed: true,
+          items: [
+            'nodes/extract-load/xlsx-node',
+          ],
+        },
+        {
+          type: 'category',
+          label: '🔄 Transform',
+          collapsed: true,
+          items: [
+            'nodes/transform/function-node',
+          ],
+        },
+        {
+          type: 'category',
+          label: '🔔 Notify',
+          collapsed: true,
+          items: [
+            'nodes/notify/email-node',
+          ],
+        },
       ],
     },
     {
       type: 'category',
       label: 'AI Features',
       items: [
-        'ai/overview',
-        'ai/flow-design-assistant',
-        'ai/code-generation',
-        'ai/documentation-generation',
-        'ai/error-resolution',
+        {
+          type: 'doc',
+          id: 'ai/overview',
+          label: '📋 Overview',
+        },
+        {
+          type: 'doc',
+          id: 'ai/flow-design-assistant',
+          label: '🎨 Flow Assistant',
+        },
+        {
+          type: 'doc',
+          id: 'ai/ai-assistant',
+          label: '✨ AI Assistant',
+        },
       ],
     },
     {
       type: 'category',
-      label: 'Sidebar Features',
+      label: 'Utils',
       items: [
-        'sidebar/overview',
-        'sidebar/node-library',
-        'sidebar/node-search',
-        'sidebar/node-categories',
-      ],
-    },
-    {
-      type: 'category',
-      label: 'Header Features',
-      items: [
-        'header/overview',
-        'header/workflow-management',
-        'header/deployment',
-        'header/menu-features',
+        'utils/overview',
+        'utils/node-library',
+        'utils/node-search',
+        'utils/node-categories',
       ],
     },
     {
