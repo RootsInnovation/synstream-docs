@@ -41,7 +41,7 @@ Understand how data flows between nodes:
 
 ## Next Steps
 
-- [Architecture](./architecture) — learn about system architecture
-- [Node Message Flow](./node-message-flow) — understand message flow concepts
+- [Architecture](../concepts/architecture) — learn about system architecture
+- [Node Message Flow](../concepts/node-message-flow) — understand message flow concepts
 - [Nodes Overview](../nodes/overview) — learn about individual nodes
 

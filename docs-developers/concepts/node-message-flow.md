@@ -177,7 +177,7 @@ Nodes can create new messages:
 
 ## Next Steps
 
-- [Architecture](../architecture/architecture) — learn about system architecture
+- [Architecture](./architecture) — learn about system architecture
 - [Nodes Overview](../nodes/overview) — learn about individual nodes
 - [Learning](../learning/overview) — see detailed examples
 
