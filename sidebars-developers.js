@@ -85,8 +85,8 @@ export default {
           type: 'doc',
           id: 'ai/flow-design-assistant',
           label: '🎨 Flow Assistant',
-        },
-        {
+    },
+    {
           type: 'doc',
           id: 'ai/ai-assistant',
           label: '✨ AI Assistant',
